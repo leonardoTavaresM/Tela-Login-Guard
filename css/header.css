@@ -1,0 +1,34 @@
+:root{
+  --background-header: #171a21;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-header);
+  height: 80px;
+  box-sizing: border-box;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 940px;
+}
+.header-logo-a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.header-logo {
+  width: 60px;
+  border-radius: 50%;
+  /* border: 2px solid white; */
+}
+
+.header-label {
+  text-decoration: none;
+  color: white;
+}

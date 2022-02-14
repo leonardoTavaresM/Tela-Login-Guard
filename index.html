@@ -8,18 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
        
-    <title>Iniciar sessão - Steam</title>
+    <title>Iniciar sessão - Malta Corp.</title>
 </head>
 <body>
-   
         <div class="background-img"> </div>
         <header class="header">
             <div class="header-container">
-                <a href="\" class="header-logo-a">
+                <a href="https://github.com/leonardoTavaresM/Tela-Login-Guard" target="_blank" class="header-logo-a">
                     <img src="./imgs/sports_esports_white_24dp.svg" alt="" class="header-logo">
                     <label for="" class="header-label">Malta Corp.</label>
                 </a>
@@ -29,7 +29,7 @@
             <section class="main-section">
                 <h1 class="main-text">iniciar Sessão</h1>
                 <div class="main-section-box" >
-                    <form action="" class="main-form" data-form>
+                    <div action="" class="main-form" data-form>
                         <div class="form-login" >
                             <div class="form-label">
                                 <label for="" class="login-label">E-mail</label>
@@ -47,7 +47,7 @@
                             <input type="password" class="form-input" name="senha" data-input-password>
                         </div>
                         <button class="form-button" data-button-entrar id="button-entrar">Entrar</button>
-                    </form>
+                    </div>
                     <!-- <a href="">Esqueceu sua senha?</a> -->
                 </div>
             </section>
@@ -57,19 +57,24 @@
                         <img src="./imgs/sports_esports_white_24dp.svg" alt="" class="header-logo">
                         <h1 class="box-text">Malta Guard</h1>
                     </div>
-                    <form action="" class="malta-form">
+                    <div action="" class="malta-form">
                         <input type="password" class="form-input" placeholder="Código de segurança" data-malta-key>
                         <button class="form-button" data-button-malta>Entrar</button>
                         <button class="form-button-generator" data-button-generator>Gerar código</button>
-                    </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section-logado" data-logado>
+                <div class="box-logado">
+                    <h1 class='box-text'>Logado</h1>
                 </div>
             </section>
         </main>
         <footer>
             <ul class="social">
-                <li><a href="https://github.com/leonardoTavaresM"><i class="fab fa-github-square"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/leonardo-tavares-malta-de-s%C3%A1-5b3994120/"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href=https://steamcommunity.com/id/Leomaltadesa/><i class="fab fa-steam"></i></a></li>
+                <li><a href="https://github.com/leonardoTavaresM" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/leonardo-tavares-malta-de-s%C3%A1-5b3994120/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://steamcommunity.com/id/Leomaltadesa" target="_blank"><i class="fab fa-steam"></i></a></li>
             </ul>
             <div class="footer-text">Copyright 2022 © | Leonardo Tavares</div>
         </footer>

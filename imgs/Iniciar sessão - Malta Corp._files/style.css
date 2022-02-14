@@ -262,3 +262,31 @@ body{
     margin: 0.5em;
     font-size: 20px;
 }
+
+
+.section-logado{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: var(--background-main-guard) ;
+    
+}
+
+.malta-guard-active{
+    display: flex;
+}
+.box-logado{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-guard);
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
