@@ -16,6 +16,7 @@ export const VerifyPassword = (senha) => {
       labelSenhaIncorrect.classList.add(
         "active-label-required-senha-incorrect"
       );
+      alert("Sua senha deve conter 8 digitos com letra maiuscula, numero e caracter especial")
     } else if (ValidadePassword(senha).result) {
       inputSenha.classList.add("active-input-senha-correct");
       inputSenha.classList.remove("active-input-senha-error");
