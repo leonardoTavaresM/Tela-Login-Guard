@@ -8,11 +8,14 @@ export const ValidarEmail = (email) => {
 
   if (email == "") {
     labelEmail.classList.add("active-label-email");
-    inputEmail.classList.add("active-input-senha-email");
+    labelEmailIncorrect.classList.remove(
+      "active-label-required-email-incorrect"
+    );
+
     return null;
-  } else if (email.length >= 1) {
+  }
+  if (email.length >= 1) {
     labelEmail.classList.remove("active-label-email");
-    inputEmail.classList.remove("active-input-senha-email");
 
     if (emailPattern.test(email) == false) {
       inputEmail.classList.add("active-input-email-error");
@@ -22,6 +25,7 @@ export const ValidarEmail = (email) => {
       );
     } else if (emailPattern.test(email)) {
       inputEmail.classList.add("active-input-email-correct");
+      labelEmail.classList.remove("active-label-email");
       inputEmail.classList.remove("active-input-email-error");
     }
   }

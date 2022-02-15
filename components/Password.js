@@ -6,6 +6,9 @@ export const VerifyPassword = (senha) => {
   if (senha === "") {
     labelSenha.classList.add("active-label-senha");
     inputSenha.classList.add("active-input-senha-error");
+    labelSenhaIncorrect.classList.remove(
+      "active-label-required-senha-incorrect"
+    );
     return null;
   } else if (senha.length >= 1) {
     labelSenha.classList.remove("active-label-senha");
@@ -16,7 +19,9 @@ export const VerifyPassword = (senha) => {
       labelSenhaIncorrect.classList.add(
         "active-label-required-senha-incorrect"
       );
-      alert("Sua senha deve conter 8 digitos com letra maiuscula, numero e caracter especial")
+      alert(
+        "Sua senha deve conter no minimo 8 digitos com letra maiuscula, numero e caracter especial"
+      );
     } else if (ValidadePassword(senha).result) {
       inputSenha.classList.add("active-input-senha-correct");
       inputSenha.classList.remove("active-input-senha-error");

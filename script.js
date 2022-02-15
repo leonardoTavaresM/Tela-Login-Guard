@@ -43,7 +43,6 @@ const verifications = () => {
 };
 
 const handleClick = () => {
-  
   verifications();
 };
 
